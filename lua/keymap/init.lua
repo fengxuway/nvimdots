@@ -6,8 +6,8 @@ local map_cr = bind.map_cr
 -- local map_callback = bind.map_callback
 
 local plug_map = {
-	["n|<A-j>"] = map_cr("BufferLineCycleNext"):with_noremap():with_silent(),
 	["n|<A-l>"] = map_cr("BufferLineCycleNext"):with_noremap():with_silent(),
+	["n|<A-k>"] = map_cr("BufferLineCyclePrev"):with_noremap():with_silent(),
 	-- Package manager: lazy.nvim
 	["n|<leader>ph"] = map_cr("Lazy"):with_silent():with_noremap():with_nowait():with_desc("package: Show"),
 	["n|<leader>ps"] = map_cr("Lazy sync"):with_silent():with_noremap():with_nowait():with_desc("package: Sync"),
