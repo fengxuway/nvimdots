@@ -170,7 +170,7 @@ in
         extraPackages = [
           # Dependent packages used by default plugins
           pkgs.doq
-          pkgs.tree-sitter
+          #pkgs.tree-sitter
         ]
         ++ optionals cfg.withBuildTools [
           pkgs.cargo
