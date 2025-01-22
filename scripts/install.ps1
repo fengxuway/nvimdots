@@ -205,7 +205,7 @@ function _install_exe ([Parameter(Mandatory = $True)][ValidateNotNullOrEmpty()] 
 }
 
 function _install_nodejs_deps {
-	safe_execute -WithCmd { npm install --global neovim tree-sitter-cli }
+	safe_execute -WithCmd { npm install --global neovim }
 }
 
 function _install_python_deps {
